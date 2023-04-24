@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Rowdies&family=Sigmar&display=swap" rel="stylesheet">
+    <script src="validation.js"></script>
+    <title>Jina's Professional Life</title>
+</head>
+<body>
+    <header id="header-nav">
+        <h1 id="title-name">JINGJIN WANG</h1>
+        <nav id="nav-menu"> 
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_me.html">About Me</a></li>
+            <li><a href="degree_experience.html">Experience & Degree & Skill</a></li>
+            <li><a href="contact.html">Contact & Comments</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <form id="contact-form" action="index.html" method="post" onsubmit="return validateForm()">
+        <fieldset id="contact">
+            <ul >
+                <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <p id="nameError" class="error">* Required field</p>
+                </li>
+                <li>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="^\d{10}$">
+                <p id="phoneError" class="error"> Please enter a 10-digit phone number.</p>
+                </li>
+                <li>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <p id="emailError" class="error">Please enter a valid email address.</p>
+                </li>
+                <li>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments"></textarea>
+                </li>
+            </ul>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+</main>
+<footer>
+    <nav>
+        <a class="logo-linkedin" href="https://www.linkedin.com/in/jingjin-wang-jina0415/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a class="logo-instagram" href="https://www.instagram.com/jinaaries/?hl=en" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a class="logo-facebook" href="https://www.facebook.com/jingjin.wang" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+    </nav>
+    <p>Copyright © 2023 Jingjin Wang</p>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</footer>
+</body>
+</html>

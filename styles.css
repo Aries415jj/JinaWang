@@ -1,0 +1,306 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: rgb(96, 94, 94, 0.5);
+    background-image: url('images/backgroud_1.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header styles */
+  #header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+  }
+  
+  #title-name {
+    display: flex;
+    color: white;
+    font-size: 24px;
+  }
+
+  #header-nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  #header-nav li {
+    margin: 0 10px;
+  }
+  
+  #header-nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  #header-nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main container styles */
+  .container-home {
+    text-align: center;
+    margin: 100px 50px 100px 50px;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+
+  }
+  
+  .container-home ul {
+    list-style-type: none;
+  }
+  
+  .container-home a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    margin: 50px 10px 50px 10px;
+  }
+  
+  .container-home a:hover {
+    text-decoration: underline;
+  }
+
+  .container-ab img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 50%;
+    width:100px;
+    height:100px;
+    }
+    .container-ab h2, .container-ab h3, .container-ab h4 {
+        font-family: 'Sigmar', cursive;
+        font-size: 40px;
+        text-align: center;
+        color: white;
+    }
+    .container-ab hr {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    
+    .container-ab p {
+        border: 0.5px rgb(184, 182, 182);
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        text-align: center;
+        margin: 10px 400px 10px 400px;
+        word-wrap: break-word;
+        border-radius: 10px;
+        line-height: 1.5;
+    }
+    #experience {
+        text-align: center;
+    }
+    #experience h2, #experience h3{
+        font-family: 'Sigmar', cursive;
+        font-size: 40px;
+        text-align: center;
+        color: rgb(240, 242, 247);
+    }
+    
+    #degreeTable {
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse: collapse;
+        color: white;
+        background-color: rgb(96, 94, 94, 0.5);
+    }
+    
+    #degreeTable th, #degreeTable td {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+    }
+
+    #experienceTable {
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse: collapse;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    #experienceTable th, #experienceTable td {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+    }
+    fieldset#skills{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: whitesmoke;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px; 
+        margin: 10px 300px 10px 300px; 
+    }
+
+    #skills legend{
+        text-align: left;
+        font-size: 30px;
+        font-family: 'Sigmar', cursive;
+    }
+
+    #skills ul{
+        list-style-type: disc;
+        text-align: left;
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    #skills li{
+       text-align: justify;
+        padding: 5px;
+    }
+
+    fieldset#contact{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: whitesmoke;
+        background-color: rgba(0, 0, 0, 0.7); 
+        border-radius: 10px; 
+        box-shadow: 2px 2px 4px #ccc, -2px -2px 4px #ccc;
+        margin: 100px 400px 120px 400px;
+    }
+
+    #contact ul li {
+        list-style: none;
+        text-align: center;
+        margin: 20px 20px 20px 20px;
+        padding-top: 5px;
+    }
+
+    #contact ul li label{
+        float: left;
+        font-size: 20px;
+        font-family: 'Oswald', sans-serif;
+        text-align: right;
+        margin-left: 50px;
+    }
+
+    #contact ul li input{
+        width: 45%;
+        height: 30px;
+        font-size: 14px;
+        text-align: left;
+        border:none;
+        margin-left: 40px;
+    }
+
+    #contact ul li textarea{
+        width: 45%;
+        height: 80px;
+        font-size: 14px;
+        text-align: left;
+        border:none;
+        margin-left: none;
+    }
+    
+    button {
+        background-color: #82adc2; 
+        color: white; 
+        border: none;
+        padding: 5px 5px 5px 5px;
+        text-align: center;
+        font-size: 14px;
+        margin: 50px 100px 20px 140px;
+        transition-duration: 0.4s;
+    }
+    button:hover {
+        background-color: #2a4383; 
+    }
+
+    footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+  
+  .logo-linkedin,
+  .logo-instagram,
+  .logo-facebook {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+  }
+
+    .logo-linkedin:hover, .logo-instagram:hover, .logo-facebook:hover {
+        color: gray;
+    }
+  
+    @media screen and (max-width: 768px) {
+        /* Update the container-ab paragraph margins */
+        .container-ab p {
+          margin: 10px 20px 10px 20px;
+        }
+      
+        /* Update the container-ab heading font sizes */
+        .container-ab h2,
+        .container-ab h3,
+        .container-ab h4 {
+          font-size: 32px;
+        }
+      
+        /* Update the container-ab horizontal rule width */
+        .container-ab hr {
+          width: 80%;
+        }
+
+        #degreeTable,
+        #experienceTable {
+          margin-left: 10px;
+          margin-right: 10px;
+          font-size: 14px;
+        }
+      
+        /* Update fieldset margins for smaller screens */
+        fieldset#skills {
+          margin: 10px 20px 10px 20px;
+        }
+      
+        /* Update fieldset columns for smaller screens */
+        fieldset#skills {
+          columns: 1;
+        }
+        fieldset#contact {
+            margin-left: 10px;
+            margin-right: 10px;
+          }
+        
+          /* Update form element widths for smaller screens */
+          input[type="text"],
+          input[type="tel"],
+          input[type="email"],
+          textarea {
+            width: 100%;
+            box-sizing: border-box;
+          }
+            button {
+                margin: 10px 100px 10px 80px;
+            }
+
+      }
+  
+  
+  
+
+   
+      
+      
